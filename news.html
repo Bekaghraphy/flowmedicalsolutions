@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flow Medical Solutions | News</title>
+  <link rel="stylesheet" href="color.css"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><div class="container">
+    <div class="topbar-left"><span class="pill"><span class="dot"></span> Newsroom</span></div>
+    <div class="topbar-right"><span class="pill">Announcements • Events • Insights</span></div>
+  </div></div>
+
+  <header class="header"><div class="container">
+    <a class="brand" href="index.html"><div class="mark"></div><div class="name"><strong>Flow Medical Solutions</strong><span>News</span></div></a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="about.html">About us</a>
+      <div class="drop" data-drop><button type="button">Solutions <i class="chev"></i></button>
+        <div class="menu"><a href="solutions.html">Solutions Overview <small>Map + pillars</small></a></div>
+      </div>
+      <a href="projects.html">Projects</a><a class="active" href="news.html">News</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="cta"><a class="btn primary" href="contact.html">Media Inquiry</a></div>
+  </div></header>
+
+  <main class="page"><div class="container">
+    <section class="hero reveal"><div class="hero-inner">
+      <div>
+        <span class="kicker"><span class="sq"></span> News</span>
+        <h1>Updates, launches, and events—clean and searchable.</h1>
+        <p>Replace the items below with real posts. Filters تعمل تلقائيًا من `app.js`.</p>
+      </div>
+      <div class="hero-art">
+        <div class="hero-bg" style="background-image:
+          radial-gradient(circle at 30% 20%, rgba(61,179,227,.38), transparent 42%),
+          radial-gradient(circle at 70% 60%, rgba(15,45,82,.26), transparent 48%),
+          url('https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&w=1400&q=70');"></div>
+        <div class="hero-glass"></div>
+      </div>
+    </div></section>
+
+    <section class="section">
+      <div class="section-head reveal"><div>
+        <h2>Filter</h2><p>Select a category to refine the newsroom.</p>
+      </div></div>
+
+      <div class="filters reveal">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="press">Press</button>
+        <button class="chip" data-filter="event">Event</button>
+        <button class="chip" data-filter="insight">Insight</button>
+        <button class="chip" data-filter="digital">Digital</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <article class="card pad reveal" data-news data-cat="press">
+          <span class="badge">Press</span>
+          <h3 style="margin:10px 0 6px;color:var(--navy);">Strategic collaboration announcement</h3>
+          <p style="margin:0;color:rgba(15,45,82,.72);">Short summary. Replace later.</p>
+          <small style="color:rgba(15,45,82,.62);">Jan 2026</small>
+        </article>
+
+        <article class="card pad reveal" data-news data-cat="event">
+          <span class="badge">Event</span>
+          <h3 style="margin:10px 0 6px;color:var(--navy);">Flow Medical at a healthcare exhibition</h3>
+          <p style="margin:0;color:rgba(15,45,82,.72);">Short summary. Replace later.</p>
+          <small style="color:rgba(15,45,82,.62);">Jan 2026</small>
+        </article>
+
+        <article class="card pad reveal" data-news data-cat="digital">
+          <span class="badge">Digital</span>
+          <h3 style="margin:10px 0 6px;color:var(--navy);">ATOMS release notes and capabilities</h3>
+          <p style="margin:0;color:rgba(15,45,82,.72);">Short summary. Replace later.</p>
+          <small style="color:rgba(15,45,82,.62);">Jan 2026</small>
+        </article>
+
+        <article class="card pad reveal" data-news data-cat="insight">
+          <span class="badge">Insight</span>
+          <h3 style="margin:10px 0 6px;color:var(--navy);">Building adoption Post Go-Live</h3>
+          <p style="margin:0;color:rgba(15,45,82,.72);">Short summary. Replace later.</p>
+          <small style="color:rgba(15,45,82,.62);">Jan 2026</small>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="note"><span>© <span id="y"></span> Flow Medical Solutions.</span></div></div></footer>
+  </div></main>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>
