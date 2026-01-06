@@ -8,7 +8,7 @@
   cursor: pointer;
   display: block;
   float: left;
-  color: #6E6E6E; 
+  color: #3db3e3; 
   font-family:  "Plus Jakarta Sans", system-ui;
   font-size: 16px;
   font-style: normal;
@@ -29,12 +29,12 @@
   white-space: nowrap;
   width: auto; }
   .nice-select:hover {
-    border-color: #6E6E6E; }
+    border-color: #3db3e3; }
   .nice-select:active, .nice-select.open, .nice-select:focus {
-    border-color: #6E6E6E; }
+    border-color: #3db3e3; }
   .nice-select:after {
-    border-bottom: 2px solid #6E6E6E;
-    border-right: 2px solid #6E6E6E;
+    border-bottom: 2px solid #3db3e3;
+    border-right: 2px solid #3db3e3;
     content: '';
     display: block;
     height: 5px;
@@ -63,11 +63,11 @@
         -ms-transform: scale(1) translateY(0);
             transform: scale(1) translateY(0); }
   .nice-select.disabled {
-    border-color: #6E6E6E;
-    color: #6E6E6E;
+    border-color: #3db3e3;
+    color: #3db3e3;
     pointer-events: none; }
     .nice-select.disabled:after {
-      border-color: #6E6E6E; }
+      border-color: #3db3e3; }
   .nice-select.wide {
     width: 100%; }
     .nice-select.wide .list {
