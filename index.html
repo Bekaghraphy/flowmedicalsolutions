@@ -11,11 +11,11 @@
 
   <div class="topbar">
     <div class="container">
-      <div class="topbar-left">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
         <span class="pill"><span class="dot"></span> Integrated Healthcare Solutions</span>
         <span class="pill">info@flowmedical.com</span>
       </div>
-      <div class="topbar-right">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
         <span class="pill">Saudi Arabia</span>
       </div>
     </div>
@@ -33,32 +33,32 @@
 
       <nav class="nav" aria-label="Primary">
         <a class="active" href="index.html">Home</a>
-        <a href="about.html">About us</a>
+        <a href="#" aria-label="About page">About us</a>
 
         <div class="drop" data-drop>
           <button type="button">Solutions <i class="chev"></i></button>
           <div class="menu" role="menu">
-            <a href="solutions.html">Solutions Overview <small>Map + pillars</small></a>
-            <a href="enterprise-solutions.html">Enterprise Solutions <small>Strategy & structure</small></a>
-            <a href="healthcare-planning.html">Healthcare Planning <small>Planning & design</small></a>
-            <a href="execution.html">Execution <small>Delivery & rollout</small></a>
-            <a href="post-go-live.html">Post Go Live <small>Adoption & optimization</small></a>
-            <a href="carelines.html">CareLines <small>OR360 + Women Health</small></a>
-            <a href="digital-solutions.html">Digital Solutions <small>ATOMS + ACTHUB</small></a>
-            <a href="service-plus.html">Service+ <small>Service excellence</small></a>
-            <a href="managed-equipment-services.html">Managed Equipment Services <small>Lifecycle</small></a>
+            <a href="#">Solutions Overview <small>Map + pillars</small></a>
+            <a href="#">Enterprise Solutions <small>Subpage</small></a>
+            <a href="#">Healthcare Planning <small>Subpage</small></a>
+            <a href="#">Execution <small>Subpage</small></a>
+            <a href="#">Post Go Live <small>Subpage</small></a>
+            <a href="#">CareLines <small>OR360 + Women Health</small></a>
+            <a href="#">Digital Solutions <small>ATOMS + ACTHUB</small></a>
+            <a href="#">Service+ <small>Subpage</small></a>
+            <a href="#">Managed Equipment Services <small>Subpage</small></a>
           </div>
         </div>
 
-        <a href="projects.html">Projects</a>
-        <a href="news.html">News</a>
-        <a href="careers.html">Careers</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="#" aria-label="Projects page">Projects</a>
+        <a href="#" aria-label="News page">News</a>
+        <a href="#" aria-label="Careers page">Careers</a>
+        <a href="#" aria-label="Contact page">Contact Us</a>
       </nav>
 
       <div class="cta">
-        <a class="btn" href="projects.html">View Projects</a>
-        <a class="btn primary" href="contact.html">Request a Consultation</a>
+        <a class="btn" href="#projects">Our Projects</a>
+        <a class="btn primary" href="#contact">Contact Us</a>
       </div>
     </div>
   </header>
@@ -66,28 +66,29 @@
   <main class="page">
     <div class="container">
 
-      <!-- HERO -->
+      <!-- HERO (Welcome to...) -->
       <section class="hero reveal">
         <div class="hero-inner">
           <div>
-            <span class="kicker"><span class="sq"></span> Healthcare transformation, delivered.</span>
-            <h1>Solutions that move hospitals from vision to measurable outcomes.</h1>
+            <span class="kicker"><span class="sq"></span> Welcome to</span>
+            <h1>Flow Medical Solutions</h1>
             <p>
-              Flow Medical Solutions delivers enterprise healthcare solutions, CareLines programs, digital platforms,
-              and end-to-end services—designed for clarity, speed, and sustainability.
+              Flow Medical Solutions delivers integrated healthcare programs—from enterprise readiness and execution
+              to CareLines and digital platforms—built for outcomes, adoption, and long-term performance.
             </p>
             <div class="hero-actions">
-              <a class="btn primary" href="solutions.html">Explore Solutions</a>
-              <a class="btn" href="about.html">About Flow Medical</a>
+              <a class="btn primary" href="#services">More about us</a>
+              <a class="btn" href="#services">Our services</a>
             </div>
           </div>
 
-          <div class="hero-art">
-            <div class="hero-bg" aria-hidden="true"></div>
-            <div class="hero-glass" aria-hidden="true"></div>
+          <div class="hero-visual" data-logo3d-wrap>
+            <div class="bg" aria-hidden="true"></div>
+            <div class="glass" aria-hidden="true"></div>
 
-            <div class="hero-pattern" aria-hidden="true">
-              <svg viewBox="0 0 1200 700" preserveAspectRatio="none">
+            <!-- Square SVG Pattern -->
+            <div class="pattern" aria-hidden="true">
+              <svg viewBox="0 0 1200 700" preserveAspectRatio="none" style="width:100%;height:100%;">
                 <defs>
                   <pattern id="sq" width="46" height="46" patternUnits="userSpaceOnUse">
                     <rect x="9" y="9" width="14" height="14" rx="3" fill="rgba(61,179,227,.22)"></rect>
@@ -99,159 +100,331 @@
               </svg>
             </div>
 
-            <div class="logo3d-wrap" data-logo3d-wrap>
+            <!-- 3D Logo -->
+            <div class="logo3d-wrap">
               <div class="logo3d" data-logo3d aria-label="Flow Medical 3D logo">
                 <div class="face f-front"><span>FLOW</span></div>
                 <div class="face f-back"><span>MED</span></div>
-                <div class="face f-right"><span>CARE</span></div>
-                <div class="face f-left"><span>LINES</span></div>
+                <div class="face f-right"><span>OR360</span></div>
+                <div class="face f-left"><span>WH360</span></div>
                 <div class="face f-top"><span>ATOMS</span></div>
                 <div class="face f-bottom"><span>ACTHUB</span></div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      <!-- SECTION 1: What we do -->
-      <section class="section">
+      <!-- OUR SERVICES (4 cards like Ascend) -->
+      <section id="services" class="section">
         <div class="section-head reveal">
           <div>
-            <h2>What we deliver</h2>
-            <p>Three pillars, one delivery model—aligned to outcomes, adoption, and long-term performance.</p>
+            <h2>Our services</h2>
+            <p>Four core areas—same فكرة Ascend cards: صورة + عنوان + وصف + More information.</p>
           </div>
         </div>
 
         <div class="grid">
-          <article class="card feature reveal">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M6 10h12M8 14h8M10 18h4" stroke-width="2" stroke-linecap="round"/></svg>
+          <a class="card service reveal" href="#">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1581594549595-35f6edc7b762?auto=format&fit=crop&w=1400&q=70');"></div>
+            <div class="body">
+              <span class="kicker"><span class="sq"></span> Enterprise</span>
+              <h3>Enterprise Solutions</h3>
+              <p>Governance, operating model, readiness, and scalable program structures.</p>
+              <span class="more">More information <i class="arrow"></i></span>
             </div>
-            <h3>Enterprise Solutions</h3>
-            <p>Governance, operating models, planning, and execution—structured to scale.</p>
+          </a>
+
+          <a class="card service reveal" href="#">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1400&q=70');"></div>
+            <div class="body">
+              <span class="kicker"><span class="sq"></span> CareLines</span>
+              <h3>OR 360</h3>
+              <p>OR readiness, workflow, throughput, sterility, training, and KPI monitoring.</p>
+              <span class="more">More information <i class="arrow"></i></span>
+            </div>
+          </a>
+
+          <a class="card service reveal" href="#">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1580281658626-ee379f3cce93?auto=format&fit=crop&w=1400&q=70');"></div>
+            <div class="body">
+              <span class="kicker"><span class="sq"></span> CareLines</span>
+              <h3>Women Health 360</h3>
+              <p>Women’s health pathways with patient experience, safety, and adoption focus.</p>
+              <span class="more">More information <i class="arrow"></i></span>
+            </div>
+          </a>
+
+          <a class="card service reveal" href="#">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1400&q=70');"></div>
+            <div class="body">
+              <span class="kicker"><span class="sq"></span> Digital</span>
+              <h3>ATOMS / ACTHUB</h3>
+              <p>Command centers, workflow visibility, analytics, and operational decision support.</p>
+              <span class="more">More information <i class="arrow"></i></span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- OUR PROJECTS (carousel like Ascend projects area) -->
+      <section id="projects" class="section">
+        <div class="section-head reveal">
+          <div>
+            <h2>Our Projects</h2>
+            <p>Carousel بنفس روح Ascend: صور + عناوين + وصف + Tags.</p>
+          </div>
+          <a class="btn" href="#">Check all our projects</a>
+        </div>
+
+        <div class="carousel reveal">
+          <div class="carousel-track" data-carousel-track>
+            <article class="card project">
+              <div class="img" style="background-image:url('https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=1600&q=70');"></div>
+              <div class="overlay"></div>
+              <div class="content">
+                <strong style="font-size:16px;">National Command Center Enablement</strong>
+                <span style="opacity:.92;font-size:12px;">Visibility • Governance • Analytics</span>
+                <div class="tags">
+                  <span class="tag">Digital Solutions</span>
+                  <span class="tag">Performance</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="img" style="background-image:url('https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&w=1600&q=70');"></div>
+              <div class="overlay"></div>
+              <div class="content">
+                <strong style="font-size:16px;">OR 360 Program Rollout</strong>
+                <span style="opacity:.92;font-size:12px;">Pathways • Training • KPI</span>
+                <div class="tags">
+                  <span class="tag">CareLines</span>
+                  <span class="tag">OR360</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="img" style="background-image:url('https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1600&q=70');"></div>
+              <div class="overlay"></div>
+              <div class="content">
+                <strong style="font-size:16px;">Post Go-Live Adoption Program</strong>
+                <span style="opacity:.92;font-size:12px;">Change • Adoption • Optimization</span>
+                <div class="tags">
+                  <span class="tag">Execution</span>
+                  <span class="tag">Post Go Live</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="img" style="background-image:url('https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=1600&q=70');"></div>
+              <div class="overlay"></div>
+              <div class="content">
+                <strong style="font-size:16px;">Women Health 360 Pathways</strong>
+                <span style="opacity:.92;font-size:12px;">Safety • Experience • Outcomes</span>
+                <div class="tags">
+                  <span class="tag">CareLines</span>
+                  <span class="tag">WH360</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-actions">
+            <button class="iconbtn" type="button" data-carousel-prev aria-label="Previous">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="iconbtn" type="button" data-carousel-next aria-label="Next">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWS & EVENTS (grid like Ascend) -->
+      <section id="news" class="section">
+        <div class="section-head reveal">
+          <div>
+            <h2>News & Events</h2>
+            <p>Grid مختصر بنفس روح “Read Our Latest News”.</p>
+          </div>
+          <a class="btn" href="#">Read more articles</a>
+        </div>
+
+        <div class="news">
+          <article class="card news-item reveal">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=1400&q=70');"></div>
+            <div class="body">
+              <strong>Flow Medical joins a strategic collaboration</strong>
+              <small>Jan 2026</small>
+            </div>
           </article>
 
-          <article class="card feature reveal">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke-width="2" stroke-linecap="round"/><path d="M7 7h10v10H7z" stroke-width="2"/></svg>
+          <article class="card news-item reveal">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1559757175-7cb057fba93f?auto=format&fit=crop&w=1400&q=70');"></div>
+            <div class="body">
+              <strong>Enterprise program milestone achieved</strong>
+              <small>Jan 2026</small>
             </div>
-            <h3>CareLines</h3>
-            <p>OR 360 and Women Health 360 programs—care pathways and capability uplift.</p>
           </article>
 
-          <article class="card feature reveal">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 16l4-4 4 4 8-8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <article class="card news-item reveal">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1400&q=70');"></div>
+            <div class="body">
+              <strong>CareLines rollout expands to new sites</strong>
+              <small>Jan 2026</small>
             </div>
-            <h3>Digital Solutions</h3>
-            <p>ATOMS and ACTHUB platforms—visibility, workflow, and decision enablement.</p>
+          </article>
+
+          <article class="card news-item reveal">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1400&q=70');"></div>
+            <div class="body">
+              <strong>ATOMS/ACTHUB showcase at digital health event</strong>
+              <small>Jan 2026</small>
+            </div>
           </article>
         </div>
       </section>
 
-      <!-- SECTION 2: Featured Projects (Home section) -->
+      <!-- SUCCESS STORY (text + counters like Ascend) -->
       <section class="section">
         <div class="section-head reveal">
           <div>
-            <h2>Featured work</h2>
-            <p>High-impact programs delivered with structured execution and measurable value.</p>
+            <h2>Success story</h2>
+            <p>قسم “قصة/Proof” مع أرقام متحركة (Placeholder — استبدلها بأرقام حقيقية).</p>
           </div>
-          <a class="btn" href="projects.html">See all projects</a>
         </div>
 
-        <div class="grid">
-          <div class="card media reveal">
-            <div class="img" style="background-image:url('https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1400&q=70');"></div>
-            <div class="overlay"></div>
-            <div class="content">
-              <strong>Command Center Enablement</strong>
-              <span>Data + operations visibility • dashboards • governance</span>
+        <div class="success">
+          <div class="card pad left reveal">
+            <span class="kicker"><span class="sq"></span> Our impact</span>
+            <h3 style="margin:10px 0 8px; color:var(--navy);">Delivering transformation with measurable outcomes.</h3>
+            <p style="margin:0; color:rgba(15,45,82,.72); max-width:70ch;">
+              Replace this paragraph with your official success narrative: what changed, how it was delivered,
+              and what KPIs improved. Keep it concrete.
+            </p>
+            <div class="hr"></div>
+            <a class="btn primary" href="#contact">Discuss your project</a>
+          </div>
+
+          <div class="right">
+            <div class="stat reveal">
+              <div class="num" data-count="98" data-suffix="%">0%</div>
+              <div class="lab">Service uptime<br/>and SLA adherence</div>
+            </div>
+            <div class="stat reveal">
+              <div class="num" data-count="24" data-suffix="+">0+</div>
+              <div class="lab">Hospitals / sites<br/>supported</div>
+            </div>
+            <div class="stat reveal">
+              <div class="num" data-count="6" data-suffix="+">0+</div>
+              <div class="lab">Program lines<br/>delivered</div>
+            </div>
+            <div class="stat reveal">
+              <div class="num" data-count="2018" data-suffix="">0</div>
+              <div class="lab">Experience baseline<br/>reference year</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARTNERS (marquee like Ascend partners logos) -->
+      <section class="section">
+        <div class="section-head reveal">
+          <div>
+            <h2>Our Partners</h2>
+            <p>Placeholder logos (Text blocks) — استبدلها لاحقًا بشعارات PNG داخل img/.</p>
+          </div>
+        </div>
+
+        <div class="partners reveal">
+          <div class="marquee">
+            <div class="partner">Partner A</div>
+            <div class="partner">Partner B</div>
+            <div class="partner">Partner C</div>
+            <div class="partner">Partner D</div>
+            <div class="partner">Partner E</div>
+            <div class="partner">Partner F</div>
+
+            <!-- duplicate for seamless loop -->
+            <div class="partner">Partner A</div>
+            <div class="partner">Partner B</div>
+            <div class="partner">Partner C</div>
+            <div class="partner">Partner D</div>
+            <div class="partner">Partner E</div>
+            <div class="partner">Partner F</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT (bottom section like Ascend "Transforming...") -->
+      <section class="section">
+        <div class="section-head reveal">
+          <div>
+            <h2>About us</h2>
+            <p>قسم ختامي قبل الفوتر بنفس روح Ascend: Copy + صورة.</p>
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="card pad copy reveal">
+            <span class="kicker"><span class="sq"></span> Flow Medical</span>
+            <h3 style="margin:10px 0 8px; color:var(--navy);">Transforming healthcare through the patient’s eyes.</h3>
+            <p style="margin:0; color:rgba(15,45,82,.72); max-width:72ch;">
+              Replace with your company profile. Focus on what you do, who you serve, and why your delivery method is different.
+            </p>
+            <div class="hr"></div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <a class="btn" href="#">Learn more</a>
+              <a class="btn primary" href="#contact">Contact</a>
             </div>
           </div>
 
           <div class="card media reveal">
             <div class="img" style="background-image:url('https://images.unsplash.com/photo-1580281658626-ee379f3cce93?auto=format&fit=crop&w=1400&q=70');"></div>
             <div class="overlay"></div>
-            <div class="content">
-              <strong>Care Pathway Rollout</strong>
-              <span>Clinical workflow • adoption • quality checkpoints</span>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- SECTION 3: Latest News (Home section) -->
-      <section class="section">
-        <div class="section-head reveal">
-          <div>
-            <h2>Latest news</h2>
-            <p>Updates, events, and milestones—presented in a clean newsroom style.</p>
-          </div>
-          <a class="btn" href="news.html">Open Newsroom</a>
-        </div>
-
-        <div class="list">
-          <a class="row reveal" href="news.html">
-            <div class="thumb"><img alt="" src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=800&q=70"></div>
-            <div class="meta">
-              <div class="badges">
-                <span class="badge">Press</span><span class="badge">Partnership</span>
-              </div>
-              <strong>Flow Medical announces new strategic healthcare collaboration</strong>
-              <small>January 2026 • Replace this with your real post content later.</small>
-            </div>
-          </a>
-
-          <a class="row reveal" href="news.html">
-            <div class="thumb"><img alt="" src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=800&q=70"></div>
-            <div class="meta">
-              <div class="badges">
-                <span class="badge">Event</span><span class="badge">Digital</span>
-              </div>
-              <strong>Showcasing ATOMS & ACTHUB at a national digital health event</strong>
-              <small>January 2026 • Placeholder item.</small>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <!-- FOOTER -->
-      <footer class="footer">
+      <!-- FOOTER (Ascend-like blocks) -->
+      <footer class="footer" id="contact">
         <div class="container">
           <div class="footer-grid">
-            <div class="card pad">
+            <div class="card pad reveal">
               <h4>Flow Medical Solutions</h4>
               <p style="margin:0;color:rgba(15,45,82,.72);">
-                Integrated solutions across enterprise programs, CareLines, and digital enablement—built for outcomes and adoption.
+                Integrated healthcare solutions across enterprise programs, CareLines, and digital enablement.
               </p>
               <div class="hr"></div>
-              <a class="btn" href="contact.html">Contact Us</a>
+              <a class="btn primary" href="mailto:info@flowmedical.com">info@flowmedical.com</a>
             </div>
 
-            <div class="card pad">
+            <div class="card pad reveal">
               <h4>Quick Links</h4>
               <div class="links">
-                <a href="about.html">About us</a>
-                <a href="solutions.html">Solutions</a>
-                <a href="projects.html">Projects</a>
-                <a href="news.html">News</a>
-                <a href="careers.html">Careers</a>
+                <a href="#">About us</a>
+                <a href="#">Solutions</a>
+                <a href="#">Projects</a>
+                <a href="#">News</a>
+                <a href="#">Careers</a>
               </div>
             </div>
 
-            <div class="card pad">
-              <h4>Get in touch</h4>
+            <div class="card pad reveal">
+              <h4>Offices</h4>
               <div class="links">
-                <a href="mailto:info@flowmedical.com">info@flowmedical.com</a>
-                <a href="contact.html">Request a consultation</a>
+                <span style="color:rgba(15,45,82,.72);">Riyadh, Saudi Arabia</span>
+                <a href="#">Contact Us</a>
               </div>
             </div>
           </div>
 
           <div class="note">
             <span>© <span id="y"></span> Flow Medical Solutions. All Rights Reserved.</span>
-            <span style="color:rgba(15,45,82,.62)">Colors: #0f2d52 • #3db3e3 • #ffffff • #231f20</span>
+            <span>Colors: #0f2d52 • #3db3e3 • #ffffff • #231f20</span>
           </div>
         </div>
       </footer>
